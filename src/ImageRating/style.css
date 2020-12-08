@@ -1,0 +1,15 @@
+.image-rating {
+  pointer-events: auto;
+}
+
+.image-rating__star {
+  font-size: 20px;
+  padding: 0 3px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.image-rating__star.checked,
+.image-card__rating-notify {
+  color: #fdca47;
+}
