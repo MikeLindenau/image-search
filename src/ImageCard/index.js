@@ -22,7 +22,7 @@ function ImageCard({
 
   useEffect(() => {
     imageRef.current.addEventListener('load', setSpans)
-  }, [])
+  }, [setSpans])
 
   function handleRated(value) {
     onImageRated({

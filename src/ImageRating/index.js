@@ -18,7 +18,7 @@ function ImageRating({ rating = 0, ratable = true, onRated }) {
         return { ...star, checked: ratingValue >= star.value }
       })
     )
-  }, [ratingValue])
+  }, [ratingValue, stars])
 
   function onHoverStar(value) {
     if (!ratable) return
