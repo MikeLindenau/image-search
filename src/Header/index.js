@@ -6,18 +6,18 @@ function Header({ onSearch, onViewChange, view }) {
   return (
     <header className="header">
       <div class="header__nav">
-        <a
+        <button
           style={{ color: view === 'search' ? '#222' : '#999' }}
           onClick={() => onViewChange('search')}
         >
           Discover
-        </a>
-        <a
+        </button>
+        <button
           style={{ color: view === 'ratings' ? '#222' : '#999' }}
           onClick={() => onViewChange('ratings')}
         >
           Ratings
-        </a>
+        </button>
       </div>
       {view === 'search' ? (
         <div className="header__search">
